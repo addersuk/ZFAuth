@@ -10,7 +10,7 @@ class Auth_LoginController extends Zend_Controller_Action
             if ($form->isValid($request->getPost())) {
                 if ($this->_process($form->getValues())) {
                     // We're authenticated! Redirect to the home page
-                    $this->_redirector->setGotoUrl('/options/');
+                    $this->_redirector->setGotoUrl('/admin/');
                 }
             }
         }
